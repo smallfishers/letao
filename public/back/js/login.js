@@ -42,8 +42,34 @@ $(function(){
         }
       }
   });
-  
 
+  $('#form').on("success.form.bv", function( e ){
+    e.preventDefault();
+
+    $.ajax({
+      type: "post",
+      url: "/employee/employeeLogin",
+      data: $('#form').serialize(),
+      dataType:"json",
+      success: function(info){
+        if (info.success) {
+          location.href = "index.html";
+        }
+        if (info.error ===1000) {
+          $('#form').data("bootstrapValidator").updateStatus("username", "INVALID", "callback");
+        }
+
+        if (info.error ===1001) {
+          $('#form').data("bootstrapValidator").updateStatus("password", "INVALID", "callback");
+        }
+      }
+    })
+  });
+
+
+  $('[type="reset"]').click(function(){
+    $("#form").data("bootstrapValidator").resetForm();
+  })
 
 
 
