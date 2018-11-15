@@ -18,7 +18,7 @@ $(function(){
               min:2,
               max:6,
               message:'用户名长度必须是2~6位'
-            },
+            },   
             callback:{
               message:'用户名不存在'
             }
