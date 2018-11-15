@@ -4,9 +4,66 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>乐淘电商</title>
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="./lib/bootstrap-validator/css/bootstrapValidator.min.css">
+  <link rel="stylesheet" href="./lib/nprogress/nprogress.css">  
+  <link rel="stylesheet" href="./css/common.css">
 </head>
 <body>
-  <div>这是后台管理系统的首页</div>
+   <div class="lt_aside">
+     <div class="brand">
+        <a href="#">赵大头是拉呱</a>
+     </div>
+     <div class="user">
+        <img src="./images/02.jpg" alt="">
+        <p>无敌聪明是小鱼</p>
+     </div>
+     <div class="nav">
+        <ul>
+          <li><a href="user.html" ><i class="glyphicon glyphicon-user"></i><span>用户管理</span></a></li>
+          <li>
+            <a href="javascript:;" class="">
+              <i class="glyphicon glyphicon-list"></i>
+              <span>分类管理</span>
+            </a>
+            <div class="child">
+              <a href="first.html">一级分类</a>
+              <a href="second.html">二级分类</a>
+            </div>
+          </li>
+          <li><a href="product.html"><i class="glyphicon glyphicon-tags"></i><span>商品管理</span></a></li>
+        </ul>
+     </div>
+   </div>
+
+
+   <div class="main">
+     <div class="lt_topbar">
+        <a href="javascript:;" class="icon_left pull-left"><i class="glyphicon glyphicon-align-justify"></i></a>
+        <a href="javascript:;" class="icon_right pull-right"><i class="glyphicon glyphicon-log-out"></i></a>
+     </div>
+     <div class="container-fluid">
+
+        <ol class="breadcrumb mt_20">
+            <li><a href="index.html">管理系统</a></li>
+            <li class="active">首页</li>
+        </ol>
+
+     </div>     
+   </div>
+
+
+
+
+
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./lib/bootstrap-validator/js/bootstrapValidator.min.js"></script>
+  <script src="./lib/nprogress/nprogress.js"></script>
+  <script src="./js/common.js"></script>
+  
 </body>
 </html>
