@@ -17,6 +17,7 @@ $(function(){
   //功能1：导航点击切换
   $('.lt_aside .category').click(function(){
     $(this).next().stop().slideToggle();
+
   });
 
 
