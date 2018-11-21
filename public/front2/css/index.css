@@ -28,8 +28,9 @@ ul {
   top: 0;
   width: 100%;
   height: 45px;
-  background-color:  #006699;
+  background-color:   #006699;
   padding: 0 45px;
+  
 }
 .lt_header .icon_left,
 .lt_header .icon_right {
